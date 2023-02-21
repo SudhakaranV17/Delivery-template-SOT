@@ -1,0 +1,32 @@
+/*-----------------------------
+    GLOBAL VARIABLES
+ ---------------------------------*/
+ :root {
+    --font-default: "Open Sans";
+    --font-primary: "Inter", sans-serif;
+    --font-secondary: "Poppins", sans-serif;
+  }  
+:root {
+    --color-default: #0a0d13;
+    --color-primary: #0d42ff;
+    --color-secondary: #0e1d34;
+ }
+/*------------------------------
+      GENERAL STYLES 
+--------------------------------*/
+body {
+    font-family: var(--font-default);
+    color: var(--color-default);
+}
+h1,h2,h3,h4,h5,h6 {
+  font-family: var(--font-primary);
+}
+a{
+    text-decoration:none;
+    color: var(--color-default);
+}
+
+/* HERO SECTION */
+.hero h2 {
+    font-size: 30px;
+}

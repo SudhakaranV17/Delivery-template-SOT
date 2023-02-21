@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--MAIN CSS-->
+    <link rel="stylesheet"media="screen and (min-width: 1280px)" href="css/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 1279px)" href="css/mobile.css"><!--TABLET -->
+    <link rel="stylesheet" media="screen and (max-width:575px)" href="sm-mobile.css">
+    <!-- BOOTSTRAP CDN's -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <!-- ICONS CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <!-- GOOGLE FONTS LINKS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <!-- AOS ANIMATION CSS CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   
+    <!-- PURE COUNTER -->
+    <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script>
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- GLIGHTBOX -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.2.0/js/glightbox.min.js" integrity="sha512-S/H9RQ6govCzeA7F9D0m8NGfsGf0/HjJEiLEfWGaMCjFzavo+DkRbYtZLSO+X6cZsIKQ6JvV/7Y9YMaYnSGnAA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.2.0/css/glightbox.min.css" integrity="sha512-T+KoG3fbDoSnlgEXFQqwcTC9AdkFIxhBlmoaFqYaIjq2ShhNwNao9AKaLUPMfwiBPL0ScxAtc+UYbHAgvd+sjQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- swiper slide -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <title>Logis Delivery</title>
+
+</head>
+<body>
+    <!-- HEADER -->
+<header id="header" class="d-flex fixed-top align align-items-center header">
+    <div class="container d-flex align-items-center justify-content-between">
+        <a href="index.html" class="logo d-flex"><h1>Logis</h1></a>
+        <!-- NAVIGATION SECTION -->
+        <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i><!-- mobile navigation -->
+        <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+    <nav class="navbar" id="navbar">
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li class="dropdown"><a href="#"><span>Dropdown </span><i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                <ul>
+                    <li><a href="#">Dropdown 1</a></li>
+                    <!-- DEEP DROPDOWN -->
+                    <li class="dropdown"><a href="#"><span>Deep Dropdown </span><i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                    <ul>
+                        <li><a href="#">Dropdown 1</a></li>
+                        <li><a href="#">Dropdown 2</a></li>
+                        <li><a href="#">Dropdown 3</a></li>
+                        <li><a href="#">Dropdown 4</a></li>
+                    </ul>
+                    </li>
+                    <!-- DEEP DROPDOWN END -->
+                    <li><a href="#">Dropdown 2</a></li>
+                    <li><a href="#">Dropdown 3</a></li>
+                    <li><a href="#">Dropdown 4</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#" class="get-quote">Get a Quote</a></li>
+        </ul>
+    </nav><!--END OF NAVIGATION-->
+</div>
+</header><!--END OF HEADER-->
+
+   <!-- HERO SECTION -->
+   <section id="hero" class="hero align-items-center d-flex">
+    <div class="container">
+        <div class="row gy-4 justify-content-between d-flex">
+            <div class="d-flex col-lg-6 order-lg-1 order-2 flex-column justify-content-center">
+                <h2 data-aos="fade-up">Your Lightning Fast Delivery Partner</h2>
+                <p data-aos="fade-up" data-aos-delay="100">Providing reliable, fast, and secure delivery services to our customers. Our mission is to ensure that your packages are delivered on time and in perfect condition. With Logis, you can trust that your packages are in good hands.</p>
+                <!-- zip code form -->
+                <form action="#" class="form-search d-flex align-items-stretch mb-3" data-aos="fade-up" data-aos-delay="200">
+                    <input type="text" class="form-control" placeholder="Zip code or Country code">
+                    <button type="submit" class="btn btn-primary">Search</button>
+                </form>
+                <!-- four counters -->
+                <div class="row gy-4" data-aos="fade-up" data-aos-delay="400">
+
+                    <div class="col-lg-3 col-6">
+                        <div class="stats-item text-center w-100 h-100">
+                            <span class="purecounter" data-purecounter-start="0" data-purecounter-end="231" data-purecounter-duration="1">231</span>
+                            <p>Clients</p>
+                        </div>
+                    </div><!-- item ned 1 -->
+
+                    <div class="col-lg-3 col-6">
+                        <div class="stats-item text-center w-100 h-100">
+                            <span class="purecounter" data-purecounter-start="0" data-purecounter-end="523" data-purecounter-duration="1">523</span>
+                            <p>Projects</p>
+                        </div>
+                    </div><!-- ietm end 2 -->
+
+                    <div class="col-lg-3 col-6">
+                        <div class="stats-item text-center w-100 h-100">
+                            <span class="purecounter" data-purecounter-start="0" data-purecounter-end="1450" data-purecounter-duration="1">1450</span>
+                            <p>Support</p>
+                        </div>
+                    </div><!-- item end 3 -->
+
+                    <div class="col-lg-3 col-6">
+                        <div class="stats-item text-center w-100 h-100">
+                            <span class="purecounter" data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="1">32</span>
+                            <p>Workers</p>
+                        </div>
+                    </div><!-- item end 4 -->
+
+                </div>
+            </div>
+            <div class="hero-img order-1 order-lg-2 col-lg-5" data-aos="zoom-out">
+                <img src="images/hero-img.svg" alt="" class="img-fluid mb-lg-0 mb-3"><!-- hero img svg -->
+            </div>
+        </div>
+    </div>
+   </section><!-- end of hero section  -->
+
+   <!-- main contents -->
+   <main id="main">
+
+    <!-- featured service section -->
+    <section id="featured-services" class="featured-services">
+            <div class="container">
+                <div class="row gy-4">
+
+                    <div class="col-lg-4 col-md-6 d-flex service-item" data-aos="fade-up">
+                        <div>
+                        <div class="icon flex-shrink-0"><i class="fa-solid fa-cart-flatbed"></i></div>                        
+                        <h4 class="title">Packing</h4>
+                        <p class="description">Professional packing services using high-quality materials to ensure your items are secure and protected during transit.</p>
+                        <a href="#" class="readmore stretched-link"><span>Learn More</span><i class="bi bi-arrow-right"></i></a>
+                    </div>
+                    </div><!-- item 1 end -->
+
+                    <div class="col-lg-4 col-md-6 d-flex service-item" data-aos="fade-up" data-aos-delay="100">
+                        <div>
+                        <div class="icon flex-shrink-0"><i class="fa-solid fa-truck"></i></div>
+                        <h4 class="title">Transport</h4>
+                        <p class="description">We understand that timely delivery is crucial for our customers, and that's why we use the most reliable and fastest transport options available.</p>
+                        <a href="#" class="readmore stretched-link"><span>Learn More</span><i class="bi bi-arrow-right"></i></a>
+                    </div>
+                    </div><!-- item 2 end -->
+
+                    <div class="col-lg-4 col-md-6 d-flex service-item" data-aos="fade-up" data-aos-delay="200">
+                        <div>
+                        <div class="icon flex-shrink-0"><i class="fa-solid fa-truck-ramp-box"></i></div>
+                        <h4 class="title">Delivery</h4>
+                        <p class="description">We offer a range of delivery options to suit your needs, including express delivery, standard delivery, and same-day delivery.</p>
+                        <a href="#" class="readmore stretched-link"><span>Learn More</span><i class="bi bi-arrow-right"></i></a>
+                    </div>
+                    </div><!-- item 3 end -->
+                </div>
+            </div>
+
+    </section>
+
+    <!-- ABOUT US SECTION -->
+    <section id="about" class="about pt-0">
+        <div class="container" data-aos="fade-up">
+  
+          <div class="row gy-4">
+            <div class="col-lg-6 position-relative align-self-start order-lg-last order-first">
+              <img src="images/about.jpg" class="img-fluid" alt="">
+              <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox play-btn"></a>
+            </div>
+            <div class="col-lg-6 content order-last  order-lg-first" >
+              <h3>About Us</h3>
+                <p>Our mission is to provide the most reliable, secure, and cost-effective package delivery services to our customers. We strive to exceed our customers' expectations by providing timely delivery, safe and secure transport, and exceptional customer service.</p>
+                <ul>
+                    <li data-aos="fade-up" data-aos-delay="100">
+                        <i class="bi bi-diagram-3"></i>
+                        <div>
+                            <h5>Ullamco laboris nisi ut aliquip consequat</h5>
+                            <p>Magni facilis facilis repellendus cum excepturi quaerat praesentium libre trade</p>
+                        </div>
+                    </li>
+                    <li data-aos="fade-up" data-aos-delay="200">
+                        <i class="bi bi-fullscreen-exit"></i>
+                        <div>
+                            <h5>Magnam soluta odio exercitationem reprehenderi</h5>
+                            <p>Quo totam dolorum at pariatur aut distinctio dolorum laudantium illo direna pasata redi</p>
+                        </div>
+                    </li>
+                    <li data-aos="fade-up" data-aos-delay="300">
+                        <i class="bi bi-broadcast"></i>
+                        <div>
+                            <h5>Voluptatem et qui exercitationem</h5>
+                            <p>Et velit et eos maiores est tempora et quos dolorem autem tempora incidunt maxime veniam</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- OUR SERVICE SECTION -->
+    <section id="service" class="services pt-0">
+        <div class="container" data-aos="fade-up">
+            <div class="section-header" data-aos="fade-up">
+                <span>Our Services</span>
+                <h2>Our Services</h2>
+            </div>
+            <div class="row gy-4"><!-- gird system -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="images/storage-service.jpg" alt="" class="img-fluid">
+                        </div>
+                        <h3><a href="#" class="stretched-link"></a>Storage</h3>
+                        <p>We ensure that your stored items are handled with care, and we are always available to answer any questions you may have about the storage process.</p>
+                    </div>
+                </div><!-- end of storage -->
+
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="images/logistics-service.jpg" alt="" class="img-fluid">
+                        </div>
+                        <h3><a href="#" class="stretched-link"></a>Logistics</h3>
+                        <p>We offer end-to-end logistics solutions to ensure the efficient and timely delivery of your packages. From pickup to final delivery.</p>
+                    </div>
+                </div><!-- end of logistics -->
+
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="images/cargo-service.jpg" alt="" class="img-fluid">
+                        </div>
+                        <h3><a href="#" class="stretched-link"></a>Cargo</h3>
+                        <p>We provide a wide range of cargo services to meet our customers' needs, We offer both domestic and international cargo services.</p>
+                    </div>
+                </div><!-- end of cargo -->
+
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="images/trucking-service.jpg" alt="" class="img-fluid">
+                        </div>
+                        <h3><a href="#" class="stretched-link"></a>Trucking</h3>
+                        <p>Our advanced tracking systems allow you to monitor your shipment in real-time, providing you with peace of mind and the ability to plan accordingly</p>
+                    </div>
+                </div><!-- end of trucking -->
+
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="images/packaging-service.jpg" alt="" class="img-fluid">
+                        </div>
+                        <h3><a href="#" class="stretched-link"></a>Packaging</h3>
+                        <p>We use only the highest quality packaging materials to ensure that your shipments are protected during transit. Our packaging materials are sturdy and durable.</p>
+                    </div>
+                </div><!-- end of packaging -->
+
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="images/warehousing-service.jpg" alt="" class="img-fluid">
+                        </div>
+                        <h3><a href="#" class="stretched-link"></a>Warehousing</h3>
+                        <p>Our warehouses are secure, modern, and equipped with the latest technology to ensure the safe storage and  protected by advanced security systems.</p>
+                    </div>
+                </div><!-- end of warehousing -->
+            </div>
+
+        </div>
+    </section>
+
+    <!-- call to action -->
+    <section id="call-to-action" class="call-to-action">
+        <div class="container" data-aos="zoom-out">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h3>Call To Action</h3>
+                    <p>Our team is always available to provide you with the support you need to get your items shipped safely and efficiently. Whether you prefer phone or email support, we're here to help you every step of the way.</p>
+                    <a href="#" class="cta-btn">Call To Action</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- features section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="row gy-4 align-items-center features-item" data-aos="fade-up" data-aos-delay="100">
+                <div class="col-md-5">
+                    <img src="images/features-1.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="col-md-7">
+                    <h3>Safety packing provides peace of mind for both the sender and the recipient.</h3>
+                    <p class="fst-italic">
+                        Our safety packing services ensure that your shipment arrives at its destination in the same condition as when it left your hands.
+                    </p>
+                    <ul>
+                        <li><i class="bi bi-check"></i>Providing safe and reliable delivery services. </li>
+                        <li><i class="bi bi-check"></i>Damage-free guarantee to all our customers</li>
+                        <li><i class="bi bi-check"></i>Never have to worry about hidden fees</li>
+                    </ul>
+                </div>
+            </div><!-- ietm 1 end -->
+
+            <div class="row gy-4 align-items-center features-item" data-aos="fade-up" data-aos-delay="200">
+                <div class="col-md-5 order-1 order-md-2">
+                    <img src="images/features-2.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="col-md-7 order-2 order-md-1">
+                    <h3>Enjoy Free and Fast Delivery</h3>
+                    <p class="fst-italic">
+                        We know how much our customers value fast and affordable delivery. That's why we offer free delivery on all orders over a certain amount.
+                    </p>
+                    <p>
+                        We offer fast delivery for all orders, including those that qualify for our free delivery offer. Our logistics team works tirelessly to ensure that your order is shipped out as quickly as possible and arrives at your doorstep in a timely manner.
+                    </p>
+                </div>
+            </div><!-- ietm 2 end -->
+
+            <div class="row gy-4 align-items-center features-item" data-aos="fade-up" data-aos-delay="300">
+                <div class="col-md-5">
+                    <img src="images/features-3.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="col-md-7">
+                    <h3>Doorstep delivery to provide you with a contactless delivery option.</h3>
+                    <p class="fst-italic">
+                        Our doorstep delivery service provides you with the ultimate convenience. You don't have to worry about leaving your home to receive your order.
+                    </p>
+                    <ul>
+                        <li><i class="bi bi-check"></i>Fast and reliable doorstep delivery on time.</li>
+                        <li><i class="bi bi-check"></i>You can easily track your order from the moment it's shipped.</li>
+                        <li><i class="bi bi-check"></i>Our drivers are trained to handle your items with care.</li>
+                    </ul>
+                </div>
+            </div><!-- item 3 end -->
+
+            <div class="row gy-4 align-items-center features-item" data-aos="fade-up" data-aos-delay="400">
+                <div class="col-md-5 order-1 order-md-2">
+                    <img src="images/features-4.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="col-md-7 order-2 order-md-1">
+                    <h3>Our cargo shipment delivery service covers a wide range of destinations.</h3>
+                    <p class="fst-italic">
+                        We can ship your delivery across the country or even internationally, so no matter where your destination is, we've got you covered.
+                    </p>
+                    <p>
+                        We offer fast delivery options available. We understand that time is of the essence when it comes to shipping delivery, which is why we offer expedited shipping options to ensure that your delivery arrives at its destination as quickly as possible.
+                    </p>
+                </div>
+            </div><!-- item 4 end -->
+        </div>
+    </section>
+
+    <!-- pricing section -->
+    <section id="pricing" class="pricing pt-0">
+        <div class="container" data-aos="fade-up">
+            <div class="section-header">
+                <span>Pricing</span>
+                <h2>Pricing</h2>
+            </div>
+
+            <div class="row gy-4">
+                <div class="col-lg-4 " data-aos="fade-up" data-aos-delay="100">
+                    <div class="pricing-item ">
+                        <h3>Free Plan</h3>
+                        <h4><sup>$</sup>0 <span>/ month</span></h4>
+                                <ul>
+                                    <li><i class="bi bi-check"></i>Customized delivery option.</li>
+                                    <li><i class="bi bi-check"></i>Standard delivery options.</li>
+                                    <li><i class="bi bi-check"></i>Limited customer support via email.</li>
+                                    <li class="na"><i class="bi bi-x"></i>Real-time delivery tracking.</li>
+                                    <li class="na"><i class="bi bi-x"></i>Advanced customer support.</li>
+                                </ul>   
+                                <a href="#" class="buy-btn">Buy Now</a>                                  
+                    </div>
+                </div><!-- end of free plan -->
+
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                        <div class="pricing-item featured">
+                            <h3>Buisness Plan</h3>
+                            <h4><sup>$</sup>29 <span>/ month</span></h4>
+                            <ul>
+                                <li><i class="bi bi-check"></i>Advanced order management system.</li>
+                                <li><i class="bi bi-check"></i>Real-time delivery tracking.</li>
+                                <li><i class="bi bi-check"></i>24/7 Phone support.</li>
+                                <li><i class="bi bi-check"></i>Weekend or holiday delivery.</li>
+                                <li><i class="bi bi-check"></i>Delivery insurance.</li>
+                            </ul>
+                            <a href="#" class="buy-btn">Buy Now</a>
+                        </div>
+
+                 </div><!-- end of buiness plan -->
+
+                 <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="pricing-item">
+                        <h3>Developer Plan</h3>
+                        <h4><sup>$</sup>49 <span>/ month</span></h4>
+                        <ul>
+                            <li><i class="bi bi-check"></i>Multi-user account management.</li>
+                            <li><i class="bi bi-check"></i>Same day or rush delivery options.</li>
+                            <li><i class="bi bi-check"></i>Priority delivery options.</li>
+                            <li><i class="bi bi-check"></i>API access for custom integrations.</li>
+                            <li><i class="bi bi-check"></i>Advanced reporting and analytics.</li>
+                        </ul>
+                        <a href="#" class="buy-btn">Buy Now</a>
+                    </div>
+                 </div><!-- end of developer plan --> 
+
+            </div>
+        </div>
+
+    </section>
+    <!-- testimonials section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container"><!-- container -->
+
+            <div class="slides-1 swiper" data-aos="fade-up"><!-- swiper -->
+                <div class="swiper-wrapper"><!-- wrapper -->
+
+                    <div class="swiper-slide"><!-- slide 1 -->
+                        <div class="testimonial-item">
+                            <img src="images/testimonials/testimonials-1.jpg"  alt="" class="testimonial-img">
+                            <h3>Saul Goodman</h3>
+                            <h4>CEO & Founder</h4>
+                            <div class="stars">
+                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                            </div>
+                            <p>
+                                <i class="bi bi-quote quote-icon-left"></i>
+                                We're constantly seeking out new technologies and processes that can help us improve our services. We're not afraid to take risks and try new things in order to stay ahead of the curve. we're proud of the strong relationships that we've built within our company.
+                                <i class="bi bi-quote quote-icon-right"></i>
+                            </p>
+                        </div>
+                    </div><!-- slide 1 end -->
+
+                    <div class="swiper-slide"><!-- slide 2 -->
+                        <div class="testimonial-item">
+                            <img src="images/testimonials/testimonials-2.jpg"  alt="" class="testimonial-img">
+                            <h3>Sara Wilsson</h3>
+                            <h4>Designer</h4>
+                            <div class="stars">
+                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                            </div>
+                            <p>
+                                <i class="bi bi-quote quote-icon-left"></i>
+                                Our brand should be instantly recognizable and communicate our values to our customers. That's why I focus on creating designs that are not only visually appealing but also to build trust and recognition with our audience.
+                                <i class="bi bi-quote quote-icon-right"></i>
+                            </p>
+                        </div>
+                    </div><!-- slide 2 end -->
+
+                    <div class="swiper-slide"><!-- slide 3 -->
+                        <div class="testimonial-item">
+                            <img src="images/testimonials/testimonials-3.jpg"  alt="" class="testimonial-img">
+                            <h3>Jena Karlis</h3>
+                            <h4>Store Owner</h4>
+                            <div class="stars">
+                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                            </div>
+                            <p>
+                                <i class="bi bi-quote quote-icon-left"></i>
+                                Our delivery company understands the importance of customer satisfaction, which is why they go above and beyond to ensure that our customers are happy with their deliveries.
+                                <i class="bi bi-quote quote-icon-right"></i>
+                            </p>
+                        </div>
+                    </div><!-- slide 3 end -->
+
+                    <div class="swiper-slide"><!-- slide 4 -->
+                        <div class="testimonial-item">
+                            <img src="images/testimonials/testimonials-4.jpg"  alt="" class="testimonial-img">
+                            <h3>Matt Brandon</h3>
+                            <h4>Freelancer</h4>
+                            <div class="stars">
+                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                            </div>
+                            <p>
+                                <i class="bi bi-quote quote-icon-left"></i>
+                                The company compensates their freelancers fairly for their work, which is a testament to their commitment to building a strong and sustainable relationship with their talent.
+                                <i class="bi bi-quote quote-icon-right"></i>
+                            </p>
+                        </div>
+                    </div><!-- slide 4 end -->
+
+                    <div class="swiper-slide"><!-- slide 5 -->
+                        <div class="testimonial-item">
+                            <img src="images/testimonials/testimonials-5.jpg"  alt="" class="testimonial-img">
+                            <h3>John Larson</h3>
+                            <h4>Entrepreneur</h4>
+                            <div class="stars">
+                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                            </div>
+                            <p>
+                                <i class="bi bi-quote quote-icon-left"></i>
+                                Partnering with the delivery company has helped me to grow my business by providing a scalable and reliable delivery infrastructure. I appreciate their willingness to experiment with new ideas and approaches.
+                                <i class="bi bi-quote quote-icon-right"></i>
+                            </p>
+                        </div>
+                    </div><!-- slide 5 end -->
+                </div><!-- wrappper end -->
+                <div class="swiper-button-next next"></div>
+                 <div class="swiper-button-prev prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+        </div><!--container end  -->
+
+    </section>
+
+    <!-- frequently asked question -->
+    <section id="faq" class="faq">
+        <div class="container" data-aos="fade-up">
+            <div class="section-header">
+                <span>Frequently Asked Question</span>
+                <h2>Frequently Asked Question</h2>
+            </div>
+            
+            <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="200">
+                <div class="col-lg-10">
+
+                    <div class="accordion accordion-flush" id="faqlist">
+
+                     <div class="accordion-item">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button collapsed" data-bs-toggle="collapse" type="button" data-bs-target="#faq-content-1">
+                                <i class="bi bi-question-circle question-icon"></i>
+                                What happens if my package is lost or damaged during delivery?
+                            </button>
+                        </h3>
+                        <div id="faq-content-1" class="collapse accordion-collapse" data-bs-present="#faqlist">
+                            <div class="accordion-body">
+                                We will work with you to investigate and resolve the issue. We offer insurance options to cover the cost of lost or damaged packages.
+                            </div>
+                        </div>
+                    </div><!-- item 1 end -->
+
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button collapsed" data-bs-toggle="collapse" type="button" data-bs-target="#faq-content-2">
+                                <i class="bi bi-question-circle question-icon"></i>
+                                What areas do you deliver to?
+                            </button>
+                        </h3>
+                        <div id="faq-content-2" class="collapse accordion-collapse" data-bs-present="#faqlist">
+                            <div class="accordion-body">
+                                We offer delivery services in a variety of areas, including major cities and towns. To find out if we deliver to your area, please contact us with your delivery address.
+                            </div>
+                        </div>
+                    </div><!-- item 2 end -->
+
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button collapsed" data-bs-toggle="collapse" type="button" data-bs-target="#faq-content-3">
+                                <i class="bi bi-question-circle question-icon"></i>
+                                Do you provide tracking information for my delivery?
+                            </button>
+                        </h3>
+                        <div id="faq-content-3" class="collapse accordion-collapse" data-bs-present="#faqlist">
+                            <div class="accordion-body">
+                                Yes, we provide tracking information for all of our deliveries. You can track your package in real-time using our online tracking system.
+                            </div>
+                        </div>
+                    </div><!-- item 3 end -->
+
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button collapsed" data-bs-toggle="collapse" type="button" data-bs-target="#faq-content-4">
+                                <i class="bi bi-question-circle question-icon"></i>
+                                Can I change the delivery address or time after I have placed my order?
+                            </button>
+                        </h3>
+                        <div id="faq-content-4" class="collapse accordion-collapse" data-bs-present="#faqlist">
+                            <div class="accordion-body">
+                                We offer the flexibility to change the delivery address or time after an order has been placed. Please contact us as soon as possible to make any changes.
+                            </div>
+                        </div>
+                    </div><!-- item 4 end -->
+
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button collapsed" data-bs-toggle="collapse" type="button" data-bs-target="#faq-content-5">
+                                <i class="bi bi-question-circle question-icon"></i>
+                                What is the cost of delivery?
+                            </button>
+                        </h3>
+                        <div id="faq-content-5" class="collapse accordion-collapse" data-bs-present="#faqlist">
+                            <div class="accordion-body">
+                                The cost of delivery depends on the size and weight of your package, the delivery distance, and the delivery service you select. 
+                            </div>
+                        </div>
+                    </div><!-- item 5 end -->
+
+                </div>
+                </div>
+            </div><!-- gird system end -->
+        </div>
+
+    </section><!-- frequently asked question end -->
+
+   </main><!-- main end -->
+
+   <footer id="footer" class="footer">
+    <div class="container">
+        <div class="row gy-4">
+            <div class="col-lg-5 col-md-12 footer-info">
+                <a href="index.html" class="logo d-flex align-items-center"><span>Logis</span></a>
+                <p>Our mission is to ensure that your packages are delivered on time and in perfect condition. With Logis, you can trust that your packages are in good hands.</p>
+                <div class="social-links d-flex mt-4">
+                    <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+                    <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+                </div>
+            </div>
+
+            <div class="col-lg-2 col-6 footer-links">
+                <h4>Useful Links</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Terms of service</a></li>
+                    <li><a href="#">Privacy policy</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-2 col-6 footer-links">
+                <h4>Our Services</h4>
+                <ul>
+                    <li><a href="#">Web Design</a></li>
+                    <li><a href="#">Web Development</a></li>
+                    <li><a href="#">Product Management</a></li>
+                    <li><a href="#">Marketing</a></li>
+                    <li><a href="#">Graphic Design</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+                <h4>Contact Us</h4>
+                <p>
+                    A108 Adam Street,<br>
+                    New York, NY 535022,<br>
+                    United States.<br><br>
+                    <strong>Phone:</strong> +1 5589 55488 55<br>
+                    <strong>Email:</strong> info@example.com<br>
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container mt-4">
+        <div class="copyright">
+            &copy; Copyright <strong><span>Logis</span></strong>. All Rights Reserved
+        </div>
+    </div>
+    <div class="credits">
+        Designed by Sudhakar V.
+    </div>
+
+   </footer><!-- footer end -->
+
+
+    <!-- main script file -->
+    <script src="script-files.js"></script>
+</body>
+</html>
