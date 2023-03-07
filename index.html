@@ -37,39 +37,48 @@
 
 </head>
 <body>
-    <!-- HEADER -->
+  <!-- HEADER -->
 <header id="header" class="d-flex fixed-top align align-items-center header">
-    <div class="container d-flex align-items-center justify-content-between">
-        <a href="index.html" class="logo d-flex"><h1>Logis</h1></a>
+    <div class="container d-flex align-items-center">
+        
         <!-- NAVIGATION SECTION -->
-        <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i><!-- mobile navigation -->
-        <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
-    <nav class="navbar" id="navbar">
-        <ul>
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Service</a></li>
-            <li><a href="#">Pricing</a></li>
-            <li class="dropdown"><a href="#"><span>Dropdown </span><i class="bi bi-chevron-down dropdown-indicator"></i></a>
-                <ul>
-                    <li><a href="#">Dropdown 1</a></li>
+        <!-- <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i><span class="navbar-toggler-icon">mobile navigation -->
+        <!-- <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i> -->
+    <nav class="navbar navbar-expand-md container-fluid" id="navbar">
+
+        <a href="index.html" class="logo align-items-center"><h1>Logis</h1></a>
+
+        <button class="navbar-toggler justify-content-end" type="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="main-nav" data-bs-target="#main-nav"><span class="bi bi-list"></span></button>
+
+        <ul class="collapse navbar-collapse justify-content-end" id="main-nav">
+            <li class="nav-item"><a href="index.html" class="nav-link active ">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Service</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
+            <!-- dropdown-1 -->
+            <li class="dropdown nav-item"><a class="nav-link"data-bs-toggle="collapse" aria-expanded="false" aria-controls="dropdown-1" data-bs-target="#dropdown-1" href="#"><span>Drop Down </span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+
+                <ul class="collapse navbar-collapse justify-content-end" id="dropdown-1">
+                    <li class="nav-item"><a class="nav-link" href="#">Dropdown 1</a></li>
+
                     <!-- DEEP DROPDOWN -->
-                    <li class="dropdown"><a href="#"><span>Deep Dropdown </span><i class="bi bi-chevron-down dropdown-indicator"></i></a>
-                    <ul>
-                        <li><a href="#">Dropdown 1</a></li>
-                        <li><a href="#">Dropdown 2</a></li>
-                        <li><a href="#">Dropdown 3</a></li>
-                        <li><a href="#">Dropdown 4</a></li>
+                    <li class="dropdown dd-2 nav-item"><a class="nav-link"data-bs-toggle="collapse" aria-expanded="false" aria-controls="dropdown-2" data-bs-target="#dropdown-2" href="#"><span>Deep Dropdown </span><i class="bi bi-chevron-down dropdown-indicator"></i></a>
+
+                    <ul class="collapse navbar-collapse justify-content-end" id="dropdown-2">
+                        <li class="nav-item deep-dd"><a class="nav-link" href="#">Dropdown 1</a></li>
+                        <li class="nav-item deep-dd"><a class="nav-link" href="#">Dropdown 2</a></li>
+                        <li class="nav-item deep-dd"><a class="nav-link" href="#">Dropdown 3</a></li>
+                        <li class="nav-item deep-dd"><a class="nav-link" href="#">Dropdown 4</a></li>
                     </ul>
                     </li>
                     <!-- DEEP DROPDOWN END -->
-                    <li><a href="#">Dropdown 2</a></li>
-                    <li><a href="#">Dropdown 3</a></li>
-                    <li><a href="#">Dropdown 4</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Dropdown 2</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Dropdown 3</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Dropdown 4</a></li>
                 </ul>
             </li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#" class="get-quote">Get a Quote</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+            <li class="nav-item"><a class="nav-link get-quote" href="#">Get a Quote</a></li>
         </ul>
     </nav><!--END OF NAVIGATION-->
 </div>
